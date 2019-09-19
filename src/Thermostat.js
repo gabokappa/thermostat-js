@@ -53,7 +53,3 @@ Thermostat.prototype.energyUsage = function () {
     return 'high-usage'
   };
 }
-
-// Thermostat.prototype.powerSavingOn = function() {
-//   return this._maxTemp = 25;
-// };
