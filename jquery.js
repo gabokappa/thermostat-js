@@ -49,7 +49,15 @@ $('#reset').click(function(){
     $('#current-city').text(data.name);
     $('#city-temperature').text(data.main.temp);
     $('#city-weather').text(data.weather[0]['description']);
-  console.log(data)
   })
 
+  $('#select-city').submit(function(submission) {
+    submission.preventDefault();
+    var city = $('#new-city').val();
+    $.get('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=eecce9d49b709dd50d89da2c167fd224&units=metric', function(data) {
+    $('#current-city').text(data.name);
+    $('#city-temperature').text(data.main.temp);
+    $('#city-weather').text(data.weather[0]['description']);
+  })
+});
 })
