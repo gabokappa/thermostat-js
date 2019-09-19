@@ -25,5 +25,13 @@ describe('Thermostat', function(){
       };
       expect(function() { thermostat.decrement();}).toThrowError('Minimum temperature reached');
     });
+
+    it('returns a boolean when checking minimum temperature', function() {
+      for (var i = 0; i < 10; i ++) {
+        thermostat.decrement();
+      };
+      expect(thermostat.isMinimumTemperature()).toEqual(true);
+    })
+
   });
 });
