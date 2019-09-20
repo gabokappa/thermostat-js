@@ -71,8 +71,5 @@ describe('Feature Test:', function() {
       };
       expect (thermostat.energyUsage()).toEqual('high-usage');
     })
-
-    // You can ask about the thermostat's current energy usage: < 18 is low-usage, < 25 is medium-usage, anything else is high-usage.
-
   })
 })

@@ -11,9 +11,8 @@ Thermostat.prototype.current_temp = function() {
   return this._temperature;
 }
 
-Thermostat.prototype.increment = function() {
+Thermostat.prototype.increment = function () {
   if(this._temperature === this._maxTemp) {
-    throw new Error ("Max temperature reached");
   } else {
   this._temperature += 1;
 };

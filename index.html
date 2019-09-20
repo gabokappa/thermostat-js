@@ -1,8 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-<title>GGThermostat</title>
+  <meta charset="utf-utf-8">
+<title>Gabriel's Magical Thermostat</title>
 </head>
 <body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -10,25 +11,25 @@
 <script src="src/thermostat.js"></script>
 
 
-<button id='temperature-up' type='submit'> Up </button>
-<button id='temperature-down' type='submit'> Down </button>
+<button id='temperature-up' type='submit'> ▲ Up </button>
+<button id='temperature-down' type='submit'> ▼  Down </button>
 
-<h1> Current Temperature: <span id='current-temperature'></span></h1>
+<h1> Current Temperature: <span id='current-temperature'></span>°C</h1>
 
-<h2> Power Mode: <span id='power-mode'></span></h2>
+<h2> Power Saving Mode: <span id='power-mode'></span></h2>
 
 <h2> Energy Consumption: <span id='energy-consumption'></span></h2>
 
 <br>
 
-<button id='reset' type='submit'> Reset </button>
+<button id='reset' type='submit'> ↺ Reset </button>
 
-<button id='toggle-power-mode'> Powermode On/Off </button>
+<button name='power' id='toggle-power-mode'> ♲ Power Saving Mode On/Off 💡</button>
 </body>
 </html>
 
 
-<h3>The temperature in <span id='current-city'></span> is <span id='city-temperature'></span></h3>
+<h3>The temperature in <span id='current-city'></span> is <span id='city-temperature'></span>°C</h3>
 
 <h3>The weather is <span id='city-weather'></span></h3>
 

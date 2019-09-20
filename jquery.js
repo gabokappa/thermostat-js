@@ -46,7 +46,7 @@ $('#reset').click(function(){
 
 
   $.get('https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=eecce9d49b709dd50d89da2c167fd224&units=metric', function(data) {
-    $('#current-city').text(data.name);
+    $('#current-city').text(data.name);//put the semi colon after this and keep the dot.fadeOut(2600);
     $('#city-temperature').text(data.main.temp);
     $('#city-weather').text(data.weather[0]['description']);
   })
